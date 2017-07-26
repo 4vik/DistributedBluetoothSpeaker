@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_join_party"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.nicolas.bluetoothspeeker.JoinParty"
+    >
+
+    <TextView
+        android:text="Music Player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:background="#2D2D32"
+        android:gravity="center"
+        android:textColor="#B9D622"
+        android:textSize="27sp"
+        android:paddingBottom="8sp"
+        android:paddingTop="8sp"/>
+
+    <TextView
+        android:text="Song name"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:id="@+id/song_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Leave party"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:textColor="#B9D622"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/leave"
+        android:background="@drawable/leave"
+        android:layout_marginBottom="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginLeft="5sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/joinAvailableDevices"
+        android:divider="#000000"
+        android:visibility="visible"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorAccent" />
+
+    <Button
+        android:text="Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_settings"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

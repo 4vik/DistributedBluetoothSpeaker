@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_party_creation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.nicolas.bluetoothspeeker.PartyCreation">
+
+
+
+    <Button
+        android:text="Leave party"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:textColor="#B9D622"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/leave"
+        android:background="@drawable/leave"
+        android:layout_marginBottom="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginLeft="5sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tabspager"
+        android:layout_width="match_parent"
+        android:layout_height="500sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/leave">
+
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:id="@+id/tabLayout"
+            android:background="#2D2D32"
+            app:tabMode="fixed"
+            app:tabIndicatorColor="#B9D622"
+            app:tabIndicatorHeight="4sp"
+            >
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tabItem3"
+                />
+
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tabItem2"
+                 />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tabItem"
+               />
+
+
+
+        </android.support.design.widget.TabLayout>
+
+    </android.support.v4.view.ViewPager>
+
+
+</RelativeLayout>

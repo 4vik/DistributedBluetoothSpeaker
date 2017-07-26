@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Here you can activate the automatic volume controller. The controller sets the volume depending on the distance to the DJ. ATTENTION: This feature uses a lot of battery energy."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_weight="0.03" />
+
+    <Button
+        android:text="Activate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_activate"
+        android:layout_weight="0.03" />
+
+    <Button
+        android:text="Calibrate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_calibrate"
+        android:layout_weight="0.03" />
+
+    <Button
+        android:text="Start Controller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_start"
+        android:layout_weight="0.03" />
+
+    <TextView
+        android:text="Before starting the calibration, put both devices at 1 meter distance and wait until calibration is finsihed!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_weight="0.03"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <Button
+        android:text="Stop Controller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_stop"
+        android:layout_weight="0.03" />
+</LinearLayout>

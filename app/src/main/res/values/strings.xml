@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BluetoothSpeeker</string>
+    <string name="available_devices">Available devices</string>
+    <string name="connected_devices">Connected devices</string>
+    <string name="music_player">Music Player</string>
+
+</resources>
